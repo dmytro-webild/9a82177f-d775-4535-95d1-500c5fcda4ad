@@ -1,68 +1,20 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const halant = Halant({
-  variable: "--font-halant",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pool Screen Repair Sarasota | American Screen Hero",
-  description: "Professional pool cage, screen repair & rescreening services in Sarasota, Lakewood Ranch, and Bradenton, Florida. Free estimates. Call (941) 809-9115 today.",
-  keywords: "pool cage repair Sarasota, pool cage rescreening Sarasota, lanai screen repair, screen repair Bradenton, screen repair Lakewood Ranch, pool enclosure repair, screen rescreening Florida, pool screen installation",
-  metadataBase: new URL("https://americanscreenhero.com"),
-  alternates: {
-    canonical: "https://americanscreenhero.com",
-  },
-  openGraph: {
-    title: "Sarasota's Trusted Pool Screen Repair Experts | American Screen Hero",
-    description: "Fast, reliable screen repair and pool enclosure rescreening. Free estimates. Serving Sarasota, Lakewood Ranch, and Bradenton.",
-    url: "https://americanscreenhero.com",
-    siteName: "American Screen Hero",
-    type: "website",
-    images: [
-      {
-        url: "https://americanscreenhero.com/og-hero.jpg",
-        alt: "Professional pool screen repair service",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Pool Screen Repair Sarasota | American Screen Hero",
-    description: "Expert screen repair and pool enclosure rescreening. Get your free estimate today.",
-    images: ["https://americanscreenhero.com/twitter-hero.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  title: "American Screen Hero - Pool Cage & Screen Repair",  description: "Professional screen repair and pool enclosure rescreening services in Sarasota, Lakewood Ranch, and Bradenton."};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1430,7 +1382,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
