@@ -17,8 +17,7 @@ export default function ContactPage() {
 
   const footerColumns = [
     {
-      title: "Company",
-      items: [
+      title: "Company",      items: [
         { label: "Home", href: "/" },
         { label: "Services", href: "/services" },
         { label: "About Us", href: "/about" },
@@ -26,8 +25,7 @@ export default function ContactPage() {
       ],
     },
     {
-      title: "Services",
-      items: [
+      title: "Services",      items: [
         { label: "Pool Cage Repair", href: "/services" },
         { label: "Screen Rescreening", href: "/services" },
         { label: "Hurricane Screens", href: "/services" },
@@ -35,19 +33,15 @@ export default function ContactPage() {
       ],
     },
     {
-      title: "Contact",
-      items: [
+      title: "Contact",      items: [
         { label: "Call: (941) 809-9115", href: "tel:(941)809-9115" },
         {
-          label: "Email: ascreenhero@gmail.com",
-          href: "mailto:ascreenhero@gmail.com",
-        },
+          label: "Email: ascreenhero@gmail.com",          href: "mailto:ascreenhero@gmail.com"},
         { label: "Free Estimate", href: "/contact" },
       ],
     },
     {
-      title: "Service Areas",
-      items: [
+      title: "Service Areas",      items: [
         { label: "Sarasota", href: "/service-areas" },
         { label: "Lakewood Ranch", href: "/service-areas" },
         { label: "Bradenton", href: "/service-areas" },
@@ -76,9 +70,7 @@ export default function ContactPage() {
             id: item.id,
           }))}
           button={{
-            text: "Get a Free Estimate",
-            href: "/contact",
-          }}
+            text: "Get a Free Estimate",            href: "/contact"}}
         />
       </div>
 
@@ -88,17 +80,12 @@ export default function ContactPage() {
           animationType="entrance-slide"
           buttons={[
             {
-              text: "Get a Free Estimate",
-              href: "/contact",
-            },
+              text: "Get a Free Estimate",              href: "/contact"},
             {
-              text: "Call (941) 809-9115",
-              href: "tel:(941)809-9115",
-            },
+              text: "Call (941) 809-9115",              href: "tel:(941)809-9115"},
           ]}
           background={{
-            variant: "circleGradient",
-          }}
+            variant: "plain"}}
           useInvertedBackground={false}
         />
       </div>
