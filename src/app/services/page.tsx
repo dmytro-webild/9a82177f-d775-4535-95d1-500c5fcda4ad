@@ -29,8 +29,7 @@ export default function ServicesPage() {
 
   const footerColumns = [
     {
-      title: "Company",
-      items: [
+      title: "Company",      items: [
         { label: "Home", href: "/" },
         { label: "Services", href: "/services" },
         { label: "About Us", href: "/about" },
@@ -38,8 +37,7 @@ export default function ServicesPage() {
       ],
     },
     {
-      title: "Services",
-      items: [
+      title: "Services",      items: [
         { label: "Pool Cage Repair", href: "/services" },
         { label: "Screen Rescreening", href: "/services" },
         { label: "Hurricane Screens", href: "/services" },
@@ -47,16 +45,14 @@ export default function ServicesPage() {
       ],
     },
     {
-      title: "Contact",
-      items: [
+      title: "Contact",      items: [
         { label: "Call: (941) 809-9115", href: "tel:(941)809-9115" },
         { label: "Email: ascreenhero@gmail.com", href: "mailto:ascreenhero@gmail.com" },
         { label: "Free Estimate", href: "/contact" },
       ],
     },
     {
-      title: "Service Areas",
-      items: [
+      title: "Service Areas",      items: [
         { label: "Sarasota", href: "/service-areas" },
         { label: "Lakewood Ranch", href: "/service-areas" },
         { label: "Bradenton", href: "/service-areas" },
@@ -82,9 +78,7 @@ export default function ServicesPage() {
           brandName="American Screen Hero"
           navItems={navItems}
           button={{
-            text: "Get a Free Estimate",
-            href: "/contact",
-          }}
+            text: "Get a Free Estimate",            href: "/contact"}}
         />
       </div>
 
@@ -101,34 +95,22 @@ export default function ServicesPage() {
           features={[
             {
               icon: DropletIcon,
-              title: "Pool Cage Repair & Restoration",
-              description: "Expert diagnosis and repair of damaged pool enclosures. We assess structural integrity, replace damaged panels, and restore full functionality.",
-            },
+              title: "Pool Cage Repair & Restoration",              description: "Expert diagnosis and repair of damaged pool enclosures. We assess structural integrity, replace damaged panels, and restore full functionality."},
             {
               icon: RefreshCw,
-              title: "Pool Cage Rescreening",
-              description: "Complete rescreening of pool enclosures using premium mesh materials. Perfect for aging screens or complete restoration projects that need fresh protection.",
-            },
+              title: "Pool Cage Rescreening",              description: "Complete rescreening of pool enclosures using premium mesh materials. Perfect for aging screens or complete restoration projects that need fresh protection."},
             {
               icon: Home,
-              title: "Lanai & Patio Screen Solutions",
-              description: "Professional repair and maintenance of lanai screens and patio enclosures. Ensure your outdoor living space remains protected and functional.",
-            },
+              title: "Lanai & Patio Screen Solutions",              description: "Professional repair and maintenance of lanai screens and patio enclosures. Ensure your outdoor living space remains protected and functional."},
             {
               icon: Wind,
-              title: "Hurricane-Resistant Screens",
-              description: "Protective hurricane screen installation to safeguard your home during storm season. Engineered for maximum durability and weather resistance.",
-            },
+              title: "Hurricane-Resistant Screens",              description: "Protective hurricane screen installation to safeguard your home during storm season. Engineered for maximum durability and weather resistance."},
             {
               icon: DoorOpen,
-              title: "Screen Door Service",
-              description: "Fast repair and replacement of screen doors with smooth operation and secure seals. We handle frame repair, mesh replacement, and hardware upgrades.",
-            },
+              title: "Screen Door Service",              description: "Fast repair and replacement of screen doors with smooth operation and secure seals. We handle frame repair, mesh replacement, and hardware upgrades."},
             {
               icon: Zap,
-              title: "Maintenance & Minor Repairs",
-              description: "Regular maintenance and targeted repairs to keep your screens in perfect condition year-round. Catch problems early and extend screen life.",
-            },
+              title: "Maintenance & Minor Repairs",              description: "Regular maintenance and targeted repairs to keep your screens in perfect condition year-round. Catch problems early and extend screen life."},
           ]}
         />
       </div>
@@ -137,15 +119,10 @@ export default function ServicesPage() {
         <TextSplitAbout
           title="Our Service Approach"
           description={[
-            "Every screen project starts with a thorough inspection. We evaluate damage, assess structural integrity, and provide honest recommendations for the best solution.",
-            "We use only premium materials and proven techniques to ensure long-lasting results. From quick repairs to complete enclosure rescreening, we handle every detail with precision.",
-            "Fast turnaround times, professional crews, and guaranteed satisfaction. Your home deserves quality craftsmanship, and that's exactly what we deliver.",
-          ]}
+            "Every screen project starts with a thorough inspection. We evaluate damage, assess structural integrity, and provide honest recommendations for the best solution.",            "We use only premium materials and proven techniques to ensure long-lasting results. From quick repairs to complete enclosure rescreening, we handle every detail with precision.",            "Fast turnaround times, professional crews, and guaranteed satisfaction. Your home deserves quality craftsmanship, and that's exactly what we deliver."]}
           buttons={[
             {
-              text: "Request Your Free Estimate",
-              href: "/contact",
-            },
+              text: "Request Your Free Estimate",              href: "/contact"},
           ]}
           buttonAnimation="slide-up"
           showBorder={true}
@@ -159,17 +136,12 @@ export default function ServicesPage() {
           animationType="entrance-slide"
           buttons={[
             {
-              text: "Schedule Your Free Estimate",
-              href: "/contact",
-            },
+              text: "Schedule Your Free Estimate",              href: "/contact"},
             {
-              text: "Call (941) 809-9115",
-              href: "tel:(941)809-9115",
-            },
+              text: "Call (941) 809-9115",              href: "tel:(941)809-9115"},
           ]}
           background={{
-            variant: "circleGradient",
-          }}
+            variant: "plain"}}
           useInvertedBackground={false}
         />
       </div>
