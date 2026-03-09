@@ -166,6 +166,12 @@ export default function HomePage() {
           tag="What We Offer"
           tagIcon={Wrench}
           tagAnimation="slide-up"
+          buttons={[
+            {
+              text: "Request a Quote",              href: "#cta-contact"
+            }
+          ]}
+          buttonAnimation="slide-up"
           textboxLayout="default"
           animationType="slide-up"
           useInvertedBackground={false}
