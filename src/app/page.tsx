@@ -208,19 +208,19 @@ export default function HomePage() {
             {
               id: "1",              name: "Margaret S.",              role: "Homeowner",              company: "Sarasota",              rating: 5,
               imageSrc:
-                "http://img.b2bpic.net/free-photo/photo-serious-mixed-race-partners-discuss-financial-data_273609-44254.jpg",              imageAlt: "satisfied homeowner portrait happy client"},
+                "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AiruCR7xtXa8HIbr52voHdY3BQ/uploaded-1773089720919-hem8b6pv.png",              imageAlt: "satisfied homeowner portrait happy client"},
             {
               id: "2",              name: "Robert T.",              role: "Pool Owner",              company: "Lakewood Ranch",              rating: 5,
               imageSrc:
-                "http://img.b2bpic.net/free-photo/young-smiling-woman-bikini-swimming-pool_23-2148138682.jpg",              imageAlt: "pool owner satisfied customer portrait"},
+                "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AiruCR7xtXa8HIbr52voHdY3BQ/uploaded-1773089720920-fo18wc4b.png",              imageAlt: "pool owner satisfied customer portrait"},
             {
               id: "3",              name: "Patricia M.",              role: "Senior Homeowner",              company: "Bradenton",              rating: 5,
               imageSrc:
-                "http://img.b2bpic.net/free-photo/medium-shot-women-reading-cellphone-messages_23-2150273387.jpg",              imageAlt: "elderly homeowner satisfied review"},
+                "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AiruCR7xtXa8HIbr52voHdY3BQ/uploaded-1773089720919-8mmoxn7n.png",              imageAlt: "elderly homeowner satisfied review"},
             {
               id: "4",              name: "James & Linda K.",              role: "Family Homeowners",              company: "Sarasota",              rating: 5,
               imageSrc:
-                "http://img.b2bpic.net/free-photo/business-person-planning-alternative-energies_23-2149205472.jpg",              imageAlt: "florida family homeowner portrait"},
+                "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AiruCR7xtXa8HIbr52voHdY3BQ/uploaded-1773089720920-zs7bl4ob.png",              imageAlt: "florida family homeowner portrait"},
           ]}
         />
       </div>
@@ -257,7 +257,7 @@ export default function HomePage() {
 
       <div id="cta-contact" data-section="cta-contact">
         <ContactText
-          text="Storm season approaching? Get your free estimate today—respond within 24 hours guaranteed"
+          text="Storm season approaching? Get your free estimate today! Respond within 24 hours guaranteed."
           animationType="entrance-slide"
           buttons={[
             {
