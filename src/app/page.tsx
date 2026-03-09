@@ -251,7 +251,7 @@ export default function HomePage() {
 
       <div id="cta-contact" data-section="cta-contact">
         <ContactText
-          text="Ready for professional screen repair service? Contact American Screen Hero today for your free estimate."
+          text="Storm season approaching? Get your free estimate today—respond within 24 hours guaranteed"
           animationType="entrance-slide"
           buttons={[
             {
