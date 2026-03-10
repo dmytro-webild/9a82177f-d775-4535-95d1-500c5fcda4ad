@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./styles/variables.css";
 import "./styles/base.css";
 import { Inter } from "next/font/google";
-import { ServiceWrapper } from "@/providers/serviceWrapper/ServiceWrapper";
-import { Tag } from "@/components/common/Tag";
 
 const inter = Inter({
   variable: "--font-inter",  subsets: ["latin"],
@@ -21,10 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable}`}>
-        <ServiceWrapper>
-          <Tag />
-          {children}
-        </ServiceWrapper>
+        {children}
         <script
           type="text/javascript"
           id="hs-script-loader"
