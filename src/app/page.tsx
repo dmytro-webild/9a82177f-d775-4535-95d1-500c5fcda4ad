@@ -48,7 +48,6 @@ export default function HomePage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           brandName="American Screen Hero"
-          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AiruCR7xtXa8HIbr52voHdY3BQ/uploaded-1773113827113-978ergec.jpg"
           navItems={navItems}
           button={{
             text: "Get a Free Estimate",            href: "/contact"
