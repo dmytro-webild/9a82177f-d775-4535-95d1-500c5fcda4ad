@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./styles/variables.css";
+import "./styles/base.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "American Screen Hero - Pool Cage & Screen Repair",  description: "Professional screen repair and pool enclosure rescreening services in Sarasota, Lakewood Ranch, and Bradenton."};
+  title: "American Screen Hero - Pool Cage & Screen Repair Sarasota",  description: "Professional pool cage and screen repair services in Sarasota, Lakewood Ranch, and Bradenton. Fast, reliable rescreening and repairs."};
 
 export default function RootLayout({
   children,
@@ -13,8 +15,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const vw = window.innerWidth * 0.01;
+                  document.documentElement.style.setProperty('--vw', vw + 'px');
+                  window.addEventListener('resize', () => {
+                    const vw = window.innerWidth * 0.01;
+                    document.documentElement.style.setProperty('--vw', vw + 'px');
+                  });
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      
         <script
           dangerouslySetInnerHTML={{
             __html: `
