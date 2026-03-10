@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import "./styles/variables.css";
 import "./styles/base.css";
+import { Inter } from "next/font/google";
+import { ServiceWrapper } from "@/providers/serviceWrapper/ServiceWrapper";
+import { Tag } from "@/components/common/Tag";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  variable: "--font-inter",  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "American Screen Hero - Pool Cage & Screen Repair Sarasota",  description: "Professional pool cage and screen repair services in Sarasota, Lakewood Ranch, and Bradenton. Fast, reliable rescreening and repairs."};
+  title: "American Screen Hero - Pool Cage & Screen Repair in Sarasota",  description:
+    "Professional pool cage and screen repair services in Sarasota, Lakewood Ranch, and Bradenton. Fast, reliable screen repair and rescreening solutions."};
 
 export default function RootLayout({
   children,
@@ -16,24 +20,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        {children}
+      <body className={`${inter.variable}`}>
+        <ServiceWrapper>
+          <Tag />
+          {children}
+        </ServiceWrapper>
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const vw = window.innerWidth * 0.01;
-                  document.documentElement.style.setProperty('--vw', vw + 'px');
-                  window.addEventListener('resize', () => {
-                    const vw = window.innerWidth * 0.01;
-                    document.documentElement.style.setProperty('--vw', vw + 'px');
-                  });
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-na1.hs-scripts.com/23751040.js"
+        ></script>
       
         <script
           dangerouslySetInnerHTML={{
